@@ -1,0 +1,83 @@
+@import "../../SCSS/main.scss";
+
+.event {
+    display: flex;
+    flex-direction: row;
+    border-right: 1px solid $text;
+    padding: 0;
+    margin-right: 30px;
+    background-color: $ligth-bg;
+
+    &:last-child {
+        border: none;
+    }
+
+    &__image {
+        width: 120px;
+        height: 161px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    &__timing {
+        @include text;
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 4px;
+    }
+
+    &__date {
+        width: 50%;
+        margin: 0;
+
+    }
+
+    &__time {
+        width: 50%;
+        margin: 0;
+
+    }
+
+    &__title {
+        @include h5;
+        text-transform: uppercase;
+        margin: 0 0 16px;
+    }
+
+    &__creators {
+        @include small_text;
+        margin: 0 30px 20px;
+
+        &:nth-child(1) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__text {
+        @include caption;
+        width: 150px;
+    }
+
+    &__button {
+        @include formular;
+        text-transform: uppercase;
+        width: 154px;
+        background-color: transparent;
+        border: none;
+        border-left: 1px solid $text;
+        border-bottom: 1px solid $text;
+        margin: 0 0 16px;
+        padding: 10px 0;
+        text-align: left;
+    }
+
+    &_one-show {
+        border: none;
+    }
+}
