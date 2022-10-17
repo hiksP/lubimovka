@@ -1,19 +1,18 @@
 @import "../../SCSS/main.scss";
 
 .gallery {
-display: flex;
-flex-direction: column;
-background-color: $ligth-bg;
-padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: $ligth-bg;
+  padding-bottom: 80px;
 
-
-&__box {
+  &__box {
     align-content: center;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(2, 50%);
     gap: 1px;
-    max-width: 100%;    
-}
+    max-width: 100%;
+  }
 }
