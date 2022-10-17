@@ -14,14 +14,14 @@
 }
 .aboutProject__title {
 		padding: 80px 0 20px 0;
-		margin: 0 auto 0 360px;
+		margin: 0 auto 0 25%;
 		font-family: "Neue Machina Regular";
 		font-size: 40px;
 		font-weight: 400;
 		line-height: 40px;
 }
 .aboutProject__text-container {
-		margin: 0 auto 0 420px;
+		margin: 0 auto 0 29%;
 		width: 510px;
 		height: 140px;
 		padding: 0 0 120px 0;
