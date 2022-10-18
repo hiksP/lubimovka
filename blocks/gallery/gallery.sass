@@ -1,0 +1,17 @@
+@import "../../SASS/main.sass"
+
+.gallery 
+  display: flex
+  flex-direction: column
+  background-color: $ligth-bg
+  padding-bottom: 80px
+
+  &__box 
+    align-content: center
+    margin: auto
+    display: grid
+    grid-template-columns: repeat(4, 25%)
+    grid-template-rows: repeat(2, 50%)
+    gap: 1px
+    max-width: 100%
+  
