@@ -1,1 +1,9 @@
-@import url(../vendor/normalize.css);
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts/Neue\ Machina\ Regular/Neue\ Machina\ Regular.css');
+@import url('../vendor/fonts/Formular\ Light/formular-light.css');
+
+@import url('../blocks/header/header.css');
+
+body {
+  background-color: #ECEBE8;
+}
