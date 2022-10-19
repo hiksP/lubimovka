@@ -1,0 +1,103 @@
+$maxWith: 1440px
+$borderColor: #242424
+$formularFontFamily: 'FormularLight', 'Arial', 'sans-serif'
+$formularFontStyle: normal
+$formularFontWeight: normal
+$formularFontColor: #242424
+$neueFontFamily: 'Neue Machina Regular', 'Arial', 'sans-serif'
+$neueFontStyle: normal
+$neueFontWeight: 400
+$neueFontColor: #242424
+
+.more
+  max-width: $maxWith
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+
+.more__button
+  width: 120px
+  height: 31px
+  margin: 33px 0 0 30px
+  padding: 0 0 0 10px
+  background-color: transparent
+  border: 1px solid $borderColor
+  border-top-color: transparent
+  border-left-color: transparent
+  // display: flex
+  // justify-content: space-between
+  // align-items: center
+  text-transform: uppercase
+  font-family: $formularFontFamily
+  font-weight: $formularFontWeight
+  font-size: 16px
+  line-height: 0.88
+  color: $formularFontColor
+  cursor: pointer
+  position: relative
+  outline: none
+  text-align: right
+  vertical-align: middle
+
+.more__button-arrow
+  // background-image: url('../../images/more/more__arrow_left.svg')
+  // width: 21px
+  // height: 13px
+  // background-position: center
+  font-family: $formularFontFamily
+  font-weight: $formularFontWeight
+  font-size: 20px
+  line-height: 1
+
+.animation_from-left-to-right::before
+  content: ""
+  position: absolute
+  top: 0
+  right: 0
+  width: 0%
+  height: 100%
+  background: #242424
+  z-index: -1
+  transition: 1s
+
+
+.animation_from-left-to-right:hover
+  color: #fff
+  transition: 1s
+
+.animation_from-left-to-right:hover::before
+  width: 100%
+
+.more__container
+  display: flex
+
+.more__main-header
+  font-family: $neueFontFamily
+  font-style: $neueFontStyle
+  font-weight: $neueFontWeight
+  color: $neueFontColor
+  font-size: 72px
+  line-height: 0.97
+  letter-spacing: -0.01em
+  /* white-space: pre */
+  max-width: 450px
+  margin-left: auto
+  margin-right: 270px
+
+.more__text
+  font-family: $neueFontFamily
+  font-style: $neueFontStyle
+  font-weight: $neueFontWeight
+  color: $neueFontColor
+  font-size: 28px
+  line-height: 1.14
+  letter-spacing: -0.01em
+  /* white-space: pre */
+  max-width: 450px
+  margin: 0 0 0 180px
+
+.more__image
+  width: 720px
+  height: 445px
+  margin: 0 0 0 auto
