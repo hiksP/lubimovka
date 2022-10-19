@@ -1,0 +1,116 @@
+.youtube
+    width: 100%
+    background-color: #B7C09D
+    display: grid
+    gap: 20px 98px
+    justify-content: center
+    padding: 71px 0 141px 0
+
+    &__title
+        margin: 0 0 0 auto
+        padding-left: 100px
+        max-width: 410px
+        grid-column: 1
+        grid-row: 1
+        font-family: 'Neue Machina Regular'
+        font-weight: 400
+        font-size: 40px
+        line-height: 40px
+
+    &__subtitle
+        margin: 0 0 0 auto
+        max-width: 410px
+        grid-column: 1
+        grid-row: 2
+        font-family: 'FormularLight'
+        font-weight: 300
+        font-size: 20px
+        line-height: 28px
+
+    &__button
+        grid-column: 2
+        grid-row: 2
+        height: 56px
+        width: 276px
+        margin-bottom: 10px
+        text-transform: uppercase
+        align-self: center
+        cursor: pointer
+        color: #242424
+        border: 1px solid #000000
+        background-color: #B7C09D
+        padding: 0 0 0 20px
+        display: flex
+        align-items: center
+        position: relative
+        overflow: hidden
+        transition: color 0.7s
+        margin-left: 6px
+        margin-right: 6px
+        text-decoration: none
+
+    &__button:hover
+        color: #E5E5E5
+
+    &__button:hover &__arrow
+        background-color: #E5E5E5
+
+    &__button:active
+        height: 62px
+        width: 282px
+        margin-left: 3px
+        margin-right: 3px
+
+    &__button:active &__button-name
+        margin-left: 3px
+
+    &__button-name
+        font-family: 'FormularLight'
+        font-weight: 300
+        font-size: 16px
+        line-height: 22px
+        z-index: 2
+
+    &__arrow
+        position: relative
+        left: 162px
+        top: 0
+        width: 20px
+        height: 1px
+        background-color: #242424
+        display: block
+        z-index: 2
+        transition: background-color 0.7s
+
+    &__arrow::after
+        content: ''
+        position: absolute
+        width: 1px
+        height: 9px
+        left: 16px
+        top: -1px
+        background-color: inherit
+        transform: rotate(45deg)
+
+    &__arrow::before
+        content: ''
+        position: absolute
+        width: 1px
+        height: 9px
+        left: 16px
+        top: -7px
+        background-color: inherit
+        transform: rotate(-45deg)
+
+    &__button:before
+        content: ''
+        position: absolute
+        top: 0
+        left: -100%
+        width: 200%
+        height: 100%
+        background: linear-gradient(to right, #242424 0,#242424 50%,#B7C09D 50%,#B7C09D 0)
+        transition: left .7s
+
+    &__button:hover:before
+        left: 0

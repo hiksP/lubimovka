@@ -1,0 +1,53 @@
+.collaboration {
+  background-color: #E5E5E5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: -52px;
+}
+.collaboration__title {
+  margin: 100px 0 0 0;
+  grid-column: 2;
+  grid-row: 1;
+  font-family: "Neue Machina Regular";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 38px;
+  max-width: 468px;
+  position: relative;
+}
+.collaboration__title::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -25px;
+  top: -25px;
+  background: no-repeat center/cover url("../../images/asterisk.svg");
+  transform: rotate(45deg);
+}
+.collaboration__subtitle {
+  margin: 33px 0 24px 58px;
+  grid-column: 2;
+  grid-row: 2;
+  font-family: "Neue Machina Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 468px;
+}
+.collaboration__mail {
+  padding-bottom: 169px;
+  grid-column: 2;
+  grid-row: 3;
+  margin-left: 58px;
+  color: #242424;
+  text-decoration: none;
+  max-width: 468px;
+  font-family: "Neue Machina Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.collaboration__span {
+  text-decoration: underline;
+}/*# sourceMappingURL=collaboration.css.map */
