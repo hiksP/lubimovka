@@ -188,6 +188,11 @@
   }
 }
 
+.event__button:hover {
+  background-color: #242424;
+  color: #E5E5E5;
+}
+
 .event__button-container {
   display: -webkit-box;
   display: -ms-flexbox;
