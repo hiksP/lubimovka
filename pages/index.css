@@ -1,6 +1,6 @@
-@import url('../vendor/normalize.css');
-@import url('../vendor/fonts/Neue\ Machina\ Regular/Neue\ Machina\ Regular.css');
-@import url('../vendor/fonts/Formular\ Light/formular-light.css');
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/Formular-light/formular-light.css);
+@import url(../vendor/fonts/NMR/NMR.css);
 
 @import url('../blocks/header/header.css');
 @import url('../blocks/more/more.css');
