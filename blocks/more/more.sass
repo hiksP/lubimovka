@@ -1,16 +1,13 @@
-$maxWith: 1440px
+@import ../../sass/variables
+$maxWidth: 1440px
 $borderColor: #242424
-$formularFontFamily: 'FormularLight', 'Arial', 'sans-serif'
 $formularFontStyle: normal
 $formularFontWeight: normal
-$formularFontColor: #242424
-$neueFontFamily: 'Neue Machina Regular', 'Arial', 'sans-serif'
 $neueFontStyle: normal
 $neueFontWeight: 400
-$neueFontColor: #242424
 
 .more
-  max-width: $maxWith
+  max-width: $maxWidth
   margin: 0 auto
   display: flex
   flex-wrap: wrap
@@ -29,11 +26,11 @@ $neueFontColor: #242424
   justify-content: space-between
   align-items: center
   text-transform: uppercase
-  font-family: $formularFontFamily
+  font-family: $f_formular
   font-weight: $formularFontWeight
   font-size: 16px
   line-height: 0.88
-  color: $formularFontColor
+  color: $fColor_black
   cursor: pointer
   position: relative
   outline: none
@@ -72,10 +69,10 @@ $neueFontColor: #242424
   display: flex
 
 .more__main-header
-  font-family: $neueFontFamily
+  font-family: $f_machina
   font-style: $neueFontStyle
   font-weight: $neueFontWeight
-  color: $neueFontColor
+  color: $fColor_black
   font-size: 72px
   line-height: 0.97
   letter-spacing: -0.01em
@@ -85,10 +82,10 @@ $neueFontColor: #242424
   margin-right: 270px
 
 .more__text
-  font-family: $neueFontFamily
+  font-family: $f_machina
   font-style: $neueFontStyle
   font-weight: $neueFontWeight
-  color: $neueFontColor
+  color: $fColor_black
   font-size: 28px
   line-height: 1.14
   letter-spacing: -0.01em
