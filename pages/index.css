@@ -1,4 +1,3 @@
-@import url('../vendor/normalize.css');
+@import url(../vendor/normalize.css);
 @import url(../vendor/fonts/Formular-light/formular-light.css);
 @import url(../vendor/fonts/NMR/NMR.css);
-@import url('../blocks/header/header.css');
