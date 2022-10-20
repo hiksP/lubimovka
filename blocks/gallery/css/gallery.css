@@ -6,8 +6,30 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 122px;
   background-color: #E5E5E5;
-  padding-bottom: 80px;
+}
+
+.gallery__name {
+  font-family: "Neue Machina Regular";
+  font-size: 40px;
+  line-height: 1.05;
+  color: #242424;
+  font-weight: 400;
+  padding-left: 360px;
+  padding-bottom: 45px;
+  padding-top: 145px;
+  width: 450px;
+}
+
+@media (max-width: 768px) {
+  .gallery__name {
+    padding-left: 24px;
+    width: 369px;
+    font-size: 28px;
+    padding-top: 100px;
+    margin-bottom: 34px;
+  }
 }
 
 .gallery__box {
@@ -22,4 +44,10 @@
       grid-template-rows: repeat(2, 50%);
   gap: 1px;
   max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .gallery__item {
+    width: 206px;
+  }
 }

@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./pages/index.css" />
     <title>Любимовка</title>
-
   </head>
   <body>
 
     <section class="gallery">
-      <h2 class="section__name">Заголовок блока с фотографиями</h2>
+      <h2 class="gallery__name">Заголовок блока с фотографиями</h2>
       <div class="gallery__box">
         <img class="gallery__item" src="./images/gallery/img1.png" alt="Спектакль" />
         <img class="gallery__item" src="./images/gallery/img2.png" alt="Спектакль" />
@@ -24,79 +23,128 @@
     </section>
 
     <section class="shows">
-      <h2 class="section__name">Заголовок блока с тремя и более спектаклями</h2>
+      <h2 class="shows__name">Заголовок блока с тремя и более спектаклями</h2>
       <ul class="shows__list">
         <li class="event">
-          <img class="event__image" src="./images/shows/show2.png" alt="Афиша">
-        <div class="event__info">
-          <div class="event__timing">
-            <p class="event__date">15 декабря</p>
-            <p class="event__time">11:00</p>
+          <div class="event__info-container">
+            <img class="event__image" src="./images/shows/show1.png" alt="Афиша">
+          <div class="event__info">
+            <div class="event__timing">
+              <p class="event__date">15 декабря</p>
+              <p class="event__time">11:00</p>
+            </div>
+            <h5 class="event__title">Про линя</h5>
+            <div>
+              <p class="event__creators">Драматург: Ольга Казакова</p>
+              <p class="event__creators">Режиссер: Катя Ганюшина</p>
+            </div>
+            <p class="event__text">читка проекта Любимовка.Ещё</p>
           </div>
-          <h5 class="event__title">Мама</h5>
-          <div>
-            <p class="event__creators">Драматург: Ольга Казакова</p>
-            <p class="event__creators">Режиссер: Катя Ганюшина</p>
           </div>
-          <p class="event__text">читка проекта Любимовка.Ещё</p>
-          <button class="event__button" type="button" aria-label="О спектакле">&#8594; О спектакле</button>
-          <button class="event__button" type="button" aria-label="Билеты">&#8594; Билеты</button>
-        </li>
+            <div class="event__button-container">
+              <button class="event__button" type="button" aria-label="О спектакле">&#8594; О спектакле</button>
+              <button class="event__button" type="button" aria-label="Билеты">&#8594; Билеты</button>
+            </div> 
+          </li>
+
         <li class="event">
-          <img class="event__image" src="./images/shows/show1.png" alt="Афиша">
-        <div class="event__info">
-          <div class="event__timing">
-            <p class="event__date">15 декабря</p>
-            <p class="event__time">11:00</p>
+          <div class="event__info-container">
+            <img class="event__image" src="./images/shows/show1.png" alt="Афиша">
+          <div class="event__info">
+            <div class="event__timing">
+              <p class="event__date">15 декабря</p>
+              <p class="event__time">11:00</p>
+            </div>
+            <h5 class="event__title">Про линя</h5>
+            <div>
+              <p class="event__creators">Драматург: Ольга Казакова</p>
+              <p class="event__creators">Режиссер: Катя Ганюшина</p>
+            </div>
+            <p class="event__text">читка проекта Любимовка.Ещё</p>
           </div>
-          <h5 class="event__title">Про линя</h5>
-          <div>
-            <p class="event__creators">Драматург: Ольга Казакова</p>
-            <p class="event__creators">Режиссер: Катя Ганюшина</p>
           </div>
-          <p class="event__text">читка проекта Любимовка.Ещё</p>
-          <button class="event__button" type="button" aria-label="О спектакле">&#8594; О спектакле</button>
-          <button class="event__button" type="button" aria-label="Билеты">&#8594; Билеты</button>
-        </li>
+            <div class="event__button-container">
+              <button class="event__button" type="button" aria-label="О спектакле">&#8594; О спектакле</button>
+              <button class="event__button" type="button" aria-label="Билеты">&#8594; Билеты</button>
+            </div> 
+          </li>
+
         <li class="event">
-          <img class="event__image" src="./images/shows/show2.png" alt="Афиша">
-        <div class="event__info">
-          <div class="event__timing">
-            <p class="event__date">15 декабря</p>
-            <p class="event__time">11:00</p>
+          <div class="event__info-container">
+            <img class="event__image" src="./images/shows/show1.png" alt="Афиша">
+          <div class="event__info">
+            <div class="event__timing">
+              <p class="event__date">15 декабря</p>
+              <p class="event__time">11:00</p>
+            </div>
+            <h5 class="event__title">Про линя</h5>
+            <div>
+              <p class="event__creators">Драматург: Ольга Казакова</p>
+              <p class="event__creators">Режиссер: Катя Ганюшина</p>
+            </div>
+            <p class="event__text">читка проекта Любимовка.Ещё</p>
           </div>
-          <h5 class="event__title">Мама</h5>
-          <div>
-            <p class="event__creators">Драматург: Ольга Казакова</p>
-            <p class="event__creators">Режиссер: Катя Ганюшина</p>
           </div>
-          <p class="event__text">читка проекта Любимовка.Ещё</p>
-          <button class="event__button" type="button" aria-label="О спектакле">&#8594; О спектакле</button>
-          <button class="event__button" type="button" aria-label="Билеты">&#8594; Билеты</button>
-        </li>
+            <div class="event__button-container">
+              <button class="event__button" type="button" aria-label="О спектакле">&#8594; О спектакле</button>
+              <button class="event__button" type="button" aria-label="Билеты">&#8594; Билеты</button>
+            </div> 
+          </li>
       </ul>
     </section>
 
-    <section class="shows">
-      <h2 class="section__name">Заголовок блока с двумя спектаклями</h2>
+    <section class="shows shows_desktop">
+      <h2 class="shows__name">Заголовок блока с двумя спектаклями</h2>
       <ul class="shows__list shows__list_two-shows">
         <li class="event">
-          <img class="event__image" src="./images/shows/show2.png" alt="Афиша">
-        <div class="event__info">
-          <div class="event__timing">
-            <p class="event__date">15 декабря</p>
-            <p class="event__time">11:00</p>
+          <div class="event__info-container">
+            <img class="event__image" src="./images/shows/show1.png" alt="Афиша">
+          <div class="event__info">
+            <div class="event__timing">
+              <p class="event__date">15 декабря</p>
+              <p class="event__time">11:00</p>
+            </div>
+            <h5 class="event__title">Про линя</h5>
+            <div>
+              <p class="event__creators">Драматург: Ольга Казакова</p>
+              <p class="event__creators">Режиссер: Катя Ганюшина</p>
+            </div>
+            <p class="event__text">читка проекта Любимовка.Ещё</p>
           </div>
-          <h5 class="event__title">Мама</h5>
-          <div>
-            <p class="event__creators">Драматург: Ольга Казакова</p>
-            <p class="event__creators">Режиссер: Катя Ганюшина</p>
           </div>
-          <p class="event__text">читка проекта Любимовка.Ещё</p>
-          <button class="event__button" type="button" aria-label="О спектакле">&#8594; О спектакле</button>
-          <button class="event__button" type="button" aria-label="Билеты">&#8594; Билеты</button>
-        </li>
-        <li class="event">
+            <div class="event__button-container">
+              <button class="event__button" type="button" aria-label="О спектакле">&#8594; О спектакле</button>
+              <button class="event__button" type="button" aria-label="Билеты">&#8594; Билеты</button>
+            </div> 
+          </li>        
+          <li class="event">
+            <div class="event__info-container">
+              <img class="event__image" src="./images/shows/show1.png" alt="Афиша">
+            <div class="event__info">
+              <div class="event__timing">
+                <p class="event__date">15 декабря</p>
+                <p class="event__time">11:00</p>
+              </div>
+              <h5 class="event__title">Про линя</h5>
+              <div>
+                <p class="event__creators">Драматург: Ольга Казакова</p>
+                <p class="event__creators">Режиссер: Катя Ганюшина</p>
+              </div>
+              <p class="event__text">читка проекта Любимовка.Ещё</p>
+            </div>
+            </div>
+              <div class="event__button-container">
+                <button class="event__button" type="button" aria-label="О спектакле">&#8594; О спектакле</button>
+                <button class="event__button" type="button" aria-label="Билеты">&#8594; Билеты</button>
+              </div> 
+            </li>
+      </ul>
+    </section>
+
+    <section class="shows shows_one-show shows_desktop">
+      <h2 class="shows__name shows_one-show">Заголовок блока с одним спектаклем</h2>
+      <div class="event event_one-show">
+        <div class="event__info-container">
           <img class="event__image" src="./images/shows/show1.png" alt="Афиша">
         <div class="event__info">
           <div class="event__timing">
@@ -107,34 +155,15 @@
           <div>
             <p class="event__creators">Драматург: Ольга Казакова</p>
             <p class="event__creators">Режиссер: Катя Ганюшина</p>
-          </div>
+          </div>          
           <p class="event__text">читка проекта Любимовка.Ещё</p>
-          <button class="event__button" type="button" aria-label="О спектакле">&#8594; О спектакле</button>
-          <button class="event__button" type="button" aria-label="Билеты">&#8594; Билеты</button>
-        </li>
-      </ul>
-
-    </section>
-
-    <section class="shows shows_one-show">
-      <h2 class="section__name section_one-show">Заголовок блока с одним спектаклем</h2>
-      <div class="event event_one-show">
-        <img class="event__image" src="./images/shows/show1.png" alt="Афиша">
-        <div class="event__info">
-          <div class="event__timing">
-            <p class="event__date">15 декабря</p>
-            <p class="event__time">11:00</p>
-          </div>
-          <h5 class="event__title">Про линя</h5>
-          <div>
-            <p class="event__creators">Драматург: Ольга Казакова</p>
-            <p class="event__creators">Режиссер: Катя Ганюшина</p>
-          </div>
-          <p class="event__text">читка проекта Любимовка.Ещё</p>
-          <button class="event__button" type="button" aria-label="О спектакле">&#8594; О спектакле</button>
-          <button class="event__button" type="button" aria-label="Билеты">&#8594; Билеты</button>
         </div>
-      </div>
+        </div>
+          <div class="event__button-container">
+            <button class="event__button" type="button" aria-label="О спектакле">&#8594; О спектакле</button>
+            <button class="event__button" type="button" aria-label="Билеты">&#8594; Билеты</button>
+          </div> 
+        </li>
     </section>
 
   </body>
