@@ -15,6 +15,9 @@
   border: 1px solid #242424;
   border-top-color: transparent;
   border-left-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-transform: uppercase;
   font-family: "FormularLight", "Arial", "sans-serif";
   font-weight: normal;
@@ -28,14 +31,19 @@
   vertical-align: middle;
 }
 
-.more__button-arrow {
-  font-family: "FormularLight", "Arial", "sans-serif";
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 1;
+.more__button::after {
+  content: "";
+  width: 21px;
+  height: 13px;
+  background: url("../../images/more/more__arrow_left.svg") no-repeat center center/contain;
 }
 
-.animation_from-left-to-right::before {
+.more__button:hover::after {
+  background-image: url("../../images/more/more__white-arrow_right.svg");
+  transform: rotate(180deg);
+}
+
+.more__button_animation-from-left-to-right::before {
   content: "";
   position: absolute;
   top: 0;
@@ -47,12 +55,12 @@
   transition: 1s;
 }
 
-.animation_from-left-to-right:hover {
+.more__button_animation-from-left-to-right:hover {
   color: #fff;
   transition: 1s;
 }
 
-.animation_from-left-to-right:hover::before {
+.more__button_animation-from-left-to-right:hover::before {
   width: 100%;
 }
 
