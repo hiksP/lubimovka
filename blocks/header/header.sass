@@ -1,19 +1,19 @@
-$maxWith: 1440px
+@import ../../sass/variables
+$maxWidth: 1440px
 $borderColor: #242424
-$fontFamily: 'FormularLight', 'Arial', 'sans-serif'
 $fontStyle: normal
 $fontWeight: normal
-$fontSize: 16px //must be 16px
+$fontSize: 16px
 $lineHeight: 138%
-/* identical to box height, or 138% */
-/* black */
-$fontColor: #242424
+
+body
+  background-color: $mainWhiteBg
 
 .ol
   outline: 1px red solid
 
 .header
-  max-width: $maxWith
+  max-width: $maxWidth
   height: 61px
   display: flex
   flex-direction: row
@@ -58,11 +58,11 @@ $fontColor: #242424
 
 .header__link
   text-decoration: none
-  font-family: $fontFamily
+  font-family: $f_machina
   font-weight: $fontWeight
   font-size: $fontSize
   line-height: $lineHeight
-  color: $fontColor
+  color: $fColor_black
   display: flex
   white-space: nowrap
 

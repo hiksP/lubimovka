@@ -1,5 +1,7 @@
-/* identical to box height, or 138% */
-/* black */
+body {
+  background-color: #ECEBE8;
+}
+
 .ol {
   outline: 1px red solid;
 }
@@ -58,7 +60,7 @@
 
 .header__link {
   text-decoration: none;
-  font-family: "FormularLight", "Arial", "sans-serif";
+  font-family: "Neue Machina Regular";
   font-weight: normal;
   font-size: 16px;
   line-height: 138%;
