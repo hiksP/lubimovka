@@ -8,7 +8,7 @@
   margin: 100px 0 0 0;
   grid-column: 2;
   grid-row: 1;
-  font-family: "Neue Machina Regular", "Arial", sans-serif;
+  font-family: "Neue Machina Regular", "Arial", "sans-serif";
   font-weight: 400;
   font-size: 36px;
   line-height: 38px;
@@ -28,7 +28,7 @@
   margin: 33px 0 24px 58px;
   grid-column: 2;
   grid-row: 2;
-  font-family: "Neue Machina Regular", "Arial", sans-serif;
+  font-family: "Neue Machina Regular", "Arial", "sans-serif";
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -42,7 +42,7 @@
   color: #242424;
   text-decoration: none;
   max-width: 468px;
-  font-family: "Neue Machina Regular", "Arial", sans-serif;
+  font-family: "Neue Machina Regular", "Arial", "sans-serif";
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;

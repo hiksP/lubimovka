@@ -12,7 +12,7 @@
   max-width: 410px;
   grid-column: 1;
   grid-row: 1;
-  font-family: "Neue Machina Regular", "Arial", sans-serif;
+  font-family: "Neue Machina Regular", "Arial", "sans-serif";
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -22,7 +22,7 @@
   max-width: 410px;
   grid-column: 1;
   grid-row: 2;
-  font-family: "Formular-light", "Arial", sans-serif;
+  font-family: "Formular-light", "Arial", "sans-serif";
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
@@ -78,7 +78,7 @@
   margin-left: 3px;
 }
 .youtube__button-name {
-  font-family: "Formular-light", "Arial", sans-serif;
+  font-family: "Formular-light", "Arial", "sans-serif";
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
