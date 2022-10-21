@@ -117,7 +117,7 @@
             background-color: inherit
             transform: rotate(-45deg)
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 1000px)
     .youtube
         row-gap: 16px
         padding: 56px 0 72px 0
@@ -125,7 +125,6 @@
         &__title
             padding-left: 0
             margin: 0 25px
-            padding-left: 0
             max-width: 100%
             font-size: 28px
             line-height: 32px
@@ -137,4 +136,20 @@
         &__button
             grid-column: 1
             grid-row: 3
-            margin: 0 29px 0 87px
+            margin: 3px 29px 3px 87px
+
+            &:active
+                height: 62px
+                width: 282px
+                margin: 0 29px 0 84px
+
+@media screen and (max-width: 400px)
+    .youtube
+
+        &__button
+            width: 200px
+            &:active
+                width: 206px
+
+        &__arrow
+            left: 80px

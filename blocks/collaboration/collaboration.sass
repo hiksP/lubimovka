@@ -52,15 +52,31 @@
     &__span
         text-decoration: underline
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 1000px)
     .collaboration
-        padding: 76px 24px 100px 55px
         grid-template-columns: 1fr
         margin: 0
+        justify-items: center
+
+        &__title
+            grid-column: 1
+
+        &__subtitle
+            grid-column: 1
+            margin-left: 0
+
+        &__mail
+            padding-bottom: 0
+            grid-column: 1
+            margin-left: 0
+
+@media screen and (max-width: 768px)
+    .collaboration
+        justify-items: start
+        padding: 76px 24px 100px 55px
 
         &__title
             margin: 0
-            grid-column: 1
             font-size: 28px
             line-height: 32px
 
@@ -70,9 +86,7 @@
 
         &__subtitle
             margin: 16px 0 22px 2px
-            grid-column: 1
 
         &__mail
             padding-bottom: 0
-            grid-column: 1
             margin-left: 2px

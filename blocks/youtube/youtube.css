@@ -22,7 +22,7 @@
   max-width: 410px;
   grid-column: 1;
   grid-row: 2;
-  font-family: "Formular-light", "Arial", "sans-serif";
+  font-family: "FormularLight", "Arial", "sans-serif";
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
@@ -78,7 +78,7 @@
   margin-left: 3px;
 }
 .youtube__button-name {
-  font-family: "Formular-light", "Arial", "sans-serif";
+  font-family: "FormularLight", "Arial", "sans-serif";
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -116,7 +116,7 @@
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .youtube {
     row-gap: 16px;
     padding: 56px 0 72px 0;
@@ -124,7 +124,6 @@
   .youtube__title {
     padding-left: 0;
     margin: 0 25px;
-    padding-left: 0;
     max-width: 100%;
     font-size: 28px;
     line-height: 32px;
@@ -136,6 +135,22 @@
   .youtube__button {
     grid-column: 1;
     grid-row: 3;
-    margin: 0 29px 0 87px;
+    margin: 3px 29px 3px 87px;
+  }
+  .youtube__button:active {
+    height: 62px;
+    width: 282px;
+    margin: 0 29px 0 84px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .youtube__button {
+    width: 200px;
+  }
+  .youtube__button:active {
+    width: 206px;
+  }
+  .youtube__arrow {
+    left: 80px;
   }
 }/*# sourceMappingURL=youtube.css.map */
