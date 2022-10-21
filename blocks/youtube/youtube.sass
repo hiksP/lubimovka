@@ -1,6 +1,8 @@
+@import '../../sass/variables.sass'
+
 .youtube
     width: 100%
-    background-color: #B7C09D
+    background-color: $greenBg
     display: grid
     gap: 20px 98px
     justify-content: center
@@ -12,7 +14,7 @@
         max-width: 410px
         grid-column: 1
         grid-row: 1
-        font-family: 'Neue Machina Regular'
+        font-family: $f_machina
         font-weight: 400
         font-size: 40px
         line-height: 40px
@@ -22,7 +24,7 @@
         max-width: 410px
         grid-column: 1
         grid-row: 2
-        font-family: 'FormularLight'
+        font-family: $f_formular
         font-weight: 300
         font-size: 20px
         line-height: 28px
@@ -36,9 +38,9 @@
         text-transform: uppercase
         align-self: center
         cursor: pointer
-        color: #242424
+        color: $blackColor
         border: 1px solid #000000
-        background-color: #B7C09D
+        background-color: $greenBg
         padding: 0 0 0 20px
         display: flex
         align-items: center
@@ -49,23 +51,36 @@
         margin-right: 6px
         text-decoration: none
 
-    &__button:hover
-        color: #E5E5E5
+        &:hover
+            color: $whiteBg
+
+        &:active
+            height: 62px
+            width: 282px
+            margin-left: 3px
+            margin-right: 3px
+
+        &:before
+            content: ''
+            position: absolute
+            top: 0
+            left: -100%
+            width: 200%
+            height: 100%
+            background: linear-gradient(to right, $blackColor 0, $blackColor 50%, $greenBg 50%, $greenBg 0)
+            transition: left .7s
+
+        &:hover:before
+            left: 0
 
     &__button:hover &__arrow
-        background-color: #E5E5E5
-
-    &__button:active
-        height: 62px
-        width: 282px
-        margin-left: 3px
-        margin-right: 3px
+        background-color: $whiteBg
 
     &__button:active &__button-name
         margin-left: 3px
 
     &__button-name
-        font-family: 'FormularLight'
+        font-family: $f_formular
         font-weight: 300
         font-size: 16px
         line-height: 22px
@@ -77,40 +92,49 @@
         top: 0
         width: 20px
         height: 1px
-        background-color: #242424
+        background-color: $blackColor
         display: block
         z-index: 2
         transition: background-color 0.7s
 
-    &__arrow::after
-        content: ''
-        position: absolute
-        width: 1px
-        height: 9px
-        left: 16px
-        top: -1px
-        background-color: inherit
-        transform: rotate(45deg)
+        &::after
+            content: ''
+            position: absolute
+            width: 1px
+            height: 9px
+            left: 16px
+            top: -1px
+            background-color: inherit
+            transform: rotate(45deg)
 
-    &__arrow::before
-        content: ''
-        position: absolute
-        width: 1px
-        height: 9px
-        left: 16px
-        top: -7px
-        background-color: inherit
-        transform: rotate(-45deg)
+        &::before
+            content: ''
+            position: absolute
+            width: 1px
+            height: 9px
+            left: 16px
+            top: -7px
+            background-color: inherit
+            transform: rotate(-45deg)
 
-    &__button:before
-        content: ''
-        position: absolute
-        top: 0
-        left: -100%
-        width: 200%
-        height: 100%
-        background: linear-gradient(to right, #242424 0,#242424 50%,#B7C09D 50%,#B7C09D 0)
-        transition: left .7s
+@media screen and (max-width: 768px)
+    .youtube
+        row-gap: 16px
+        padding: 56px 0 72px 0
 
-    &__button:hover:before
-        left: 0
+        &__title
+            padding-left: 0
+            margin: 0 25px
+            padding-left: 0
+            max-width: 100%
+            font-size: 28px
+            line-height: 32px
+
+        &__subtitle
+            grid-column: 1
+            margin: 0 30px 0 84px
+
+        &__button
+            grid-column: 1
+            grid-row: 3
+            margin: 0 29px 0 87px

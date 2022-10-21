@@ -12,7 +12,7 @@
   max-width: 410px;
   grid-column: 1;
   grid-row: 1;
-  font-family: "Neue Machina Regular";
+  font-family: "Neue Machina Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -22,7 +22,7 @@
   max-width: 410px;
   grid-column: 1;
   grid-row: 2;
-  font-family: "FormularLight";
+  font-family: "Formular-light", "Arial", sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
@@ -52,20 +52,33 @@
 .youtube__button:hover {
   color: #E5E5E5;
 }
-.youtube__button:hover .youtube__arrow {
-  background-color: #E5E5E5;
-}
 .youtube__button:active {
   height: 62px;
   width: 282px;
   margin-left: 3px;
   margin-right: 3px;
 }
+.youtube__button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(to right, #242424 0, #242424 50%, #B7C09D 50%, #B7C09D 0);
+  transition: left 0.7s;
+}
+.youtube__button:hover:before {
+  left: 0;
+}
+.youtube__button:hover .youtube__arrow {
+  background-color: #E5E5E5;
+}
 .youtube__button:active .youtube__button-name {
   margin-left: 3px;
 }
 .youtube__button-name {
-  font-family: "FormularLight";
+  font-family: "Formular-light", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -102,16 +115,27 @@
   background-color: inherit;
   transform: rotate(-45deg);
 }
-.youtube__button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 200%;
-  height: 100%;
-  background: linear-gradient(to right, #242424 0, #242424 50%, #B7C09D 50%, #B7C09D 0);
-  transition: left 0.7s;
-}
-.youtube__button:hover:before {
-  left: 0;
+
+@media screen and (max-width: 768px) {
+  .youtube {
+    row-gap: 16px;
+    padding: 56px 0 72px 0;
+  }
+  .youtube__title {
+    padding-left: 0;
+    margin: 0 25px;
+    padding-left: 0;
+    max-width: 100%;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .youtube__subtitle {
+    grid-column: 1;
+    margin: 0 30px 0 84px;
+  }
+  .youtube__button {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 0 29px 0 87px;
+  }
 }/*# sourceMappingURL=youtube.css.map */

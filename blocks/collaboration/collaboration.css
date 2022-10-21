@@ -8,7 +8,7 @@
   margin: 100px 0 0 0;
   grid-column: 2;
   grid-row: 1;
-  font-family: "Neue Machina Regular";
+  font-family: "Neue Machina Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 38px;
@@ -23,13 +23,12 @@
   left: -25px;
   top: -25px;
   background: no-repeat center/cover url("../../images/asterisk.svg");
-  transform: rotate(45deg);
 }
 .collaboration__subtitle {
   margin: 33px 0 24px 58px;
   grid-column: 2;
   grid-row: 2;
-  font-family: "Neue Machina Regular";
+  font-family: "Neue Machina Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -43,11 +42,38 @@
   color: #242424;
   text-decoration: none;
   max-width: 468px;
-  font-family: "Neue Machina Regular";
+  font-family: "Neue Machina Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
 }
 .collaboration__span {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .collaboration {
+    padding: 76px 24px 100px 55px;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  .collaboration__title {
+    margin: 0;
+    grid-column: 1;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .collaboration__title::after {
+    left: -30px;
+    top: -27px;
+  }
+  .collaboration__subtitle {
+    margin: 16px 0 22px 2px;
+    grid-column: 1;
+  }
+  .collaboration__mail {
+    padding-bottom: 0;
+    grid-column: 1;
+    margin-left: 2px;
+  }
 }/*# sourceMappingURL=collaboration.css.map */

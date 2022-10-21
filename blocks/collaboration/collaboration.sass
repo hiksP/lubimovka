@@ -1,5 +1,7 @@
+@import '../../sass/variables.sass'
+
 .collaboration
-    background-color: #E5E5E5
+    background-color: $whiteBg
     display: grid
     grid-template-columns: 1fr 1fr
     margin-left: -52px
@@ -8,28 +10,27 @@
         margin: 100px 0 0 0
         grid-column: 2
         grid-row: 1
-        font-family: 'Neue Machina Regular'
+        font-family: $f_machina
         font-weight: 400
         font-size: 36px
         line-height: 38px
         max-width: 468px
         position: relative
 
-    &__title::after
-        content: ''
-        position: absolute
-        width: 25px
-        height: 25px
-        left: -25px
-        top: -25px
-        background: no-repeat center / cover url('../../images/asterisk.svg')
-        transform: rotate(45deg)
+        &::after
+            content: ''
+            position: absolute
+            width: 25px
+            height: 25px
+            left: -25px
+            top: -25px
+            background: no-repeat center / cover url('../../images/asterisk.svg')
 
     &__subtitle
         margin: 33px 0 24px 58px
         grid-column: 2
         grid-row: 2
-        font-family: 'Neue Machina Regular'
+        font-family: $f_machina
         font-weight: 400
         font-size: 20px
         line-height: 24px
@@ -40,13 +41,38 @@
         grid-column: 2
         grid-row: 3
         margin-left: 58px
-        color: #242424
+        color: $blackColor
         text-decoration: none
         max-width: 468px
-        font-family: 'Neue Machina Regular'
+        font-family: $f_machina
         font-weight: 400
         font-size: 20px
         line-height: 24px
 
     &__span
         text-decoration: underline
+
+@media screen and (max-width: 768px)
+    .collaboration
+        padding: 76px 24px 100px 55px
+        grid-template-columns: 1fr
+        margin: 0
+
+        &__title
+            margin: 0
+            grid-column: 1
+            font-size: 28px
+            line-height: 32px
+
+            &::after
+                left: -30px
+                top: -27px
+
+        &__subtitle
+            margin: 16px 0 22px 2px
+            grid-column: 1
+
+        &__mail
+            padding-bottom: 0
+            grid-column: 1
+            margin-left: 2px
