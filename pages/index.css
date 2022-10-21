@@ -1,6 +1,9 @@
 @import url(../vendor/normalize.css);
-@import url(../vendor/fonts/Formular-light/formular-light.css);
 @import url(../vendor/fonts/NMR/NMR.css);
-@import url(../blocks/header/header.css);
+@import url(../vendor/fonts/Formular-light/formular-light.css);
+@import url('../blocks/header/header.css');
 @import url(../blocks/youtube/youtube.css);
 @import url(../blocks/collaboration/collaboration.css);
+@import url(../blocks/gallery/css/gallery.css);
+@import url(../blocks/event/css/event.css);
+@import url(../blocks/shows/css/shows.css);
