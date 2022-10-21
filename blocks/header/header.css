@@ -60,7 +60,7 @@ body {
 
 .header__link {
   text-decoration: none;
-  font-family: "Formular-light", "Arial", "sans-serif";
+  font-family: "FormularLight", "Arial", "sans-serif";
   font-weight: normal;
   font-size: 16px;
   line-height: 138%;
@@ -107,4 +107,4 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.21;
-}
+}/*# sourceMappingURL=header.css.map */

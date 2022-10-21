@@ -1,0 +1,155 @@
+@import '../../sass/variables.sass'
+
+.youtube
+    width: 100%
+    background-color: $greenBg
+    display: grid
+    gap: 20px 98px
+    justify-content: center
+    padding: 71px 0 141px 0
+
+    &__title
+        margin: 0 0 0 auto
+        padding-left: 100px
+        max-width: 410px
+        grid-column: 1
+        grid-row: 1
+        font-family: $f_machina
+        font-weight: 400
+        font-size: 40px
+        line-height: 40px
+
+    &__subtitle
+        margin: 0 0 0 auto
+        max-width: 410px
+        grid-column: 1
+        grid-row: 2
+        font-family: $f_formular
+        font-weight: 300
+        font-size: 20px
+        line-height: 28px
+
+    &__button
+        grid-column: 2
+        grid-row: 2
+        height: 56px
+        width: 276px
+        margin-bottom: 10px
+        text-transform: uppercase
+        align-self: center
+        cursor: pointer
+        color: $fColor_black
+        border: 1px solid #000000
+        background-color: $greenBg
+        padding: 0 0 0 20px
+        display: flex
+        align-items: center
+        position: relative
+        overflow: hidden
+        transition: color 0.7s
+        margin-left: 6px
+        margin-right: 6px
+        text-decoration: none
+
+        &:hover
+            color: $whiteBg
+
+        &:active
+            height: 62px
+            width: 282px
+            margin-left: 3px
+            margin-right: 3px
+
+        &:before
+            content: ''
+            position: absolute
+            top: 0
+            left: -100%
+            width: 200%
+            height: 100%
+            background: linear-gradient(to right, $fColor_black 0, $fColor_black 50%, $greenBg 50%, $greenBg 0)
+            transition: left .7s
+
+        &:hover:before
+            left: 0
+
+    &__button:hover &__arrow
+        background-color: $whiteBg
+
+    &__button:active &__button-name
+        margin-left: 3px
+
+    &__button-name
+        font-family: $f_formular
+        font-weight: 300
+        font-size: 16px
+        line-height: 22px
+        z-index: 2
+
+    &__arrow
+        position: relative
+        left: 162px
+        top: 0
+        width: 20px
+        height: 1px
+        background-color: $fColor_black
+        display: block
+        z-index: 2
+        transition: background-color 0.7s
+
+        &::after
+            content: ''
+            position: absolute
+            width: 1px
+            height: 9px
+            left: 16px
+            top: -1px
+            background-color: inherit
+            transform: rotate(45deg)
+
+        &::before
+            content: ''
+            position: absolute
+            width: 1px
+            height: 9px
+            left: 16px
+            top: -7px
+            background-color: inherit
+            transform: rotate(-45deg)
+
+@media screen and (max-width: 1000px)
+    .youtube
+        row-gap: 16px
+        padding: 56px 0 72px 0
+
+        &__title
+            padding-left: 0
+            margin: 0 25px
+            max-width: 100%
+            font-size: 28px
+            line-height: 32px
+
+        &__subtitle
+            grid-column: 1
+            margin: 0 30px 0 84px
+
+        &__button
+            grid-column: 1
+            grid-row: 3
+            margin: 3px 29px 3px 87px
+
+            &:active
+                height: 62px
+                width: 282px
+                margin: 0 29px 0 84px
+
+@media screen and (max-width: 400px)
+    .youtube
+
+        &__button
+            width: 200px
+            &:active
+                width: 206px
+
+        &__arrow
+            left: 80px
