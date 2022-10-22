@@ -1,0 +1,213 @@
+
+@mixin fontsNeueMachina($fz, $lh) 
+    font-family: 'Neue Machina'
+    font-style: normal
+    font-weight: 400
+    font-size: $fz
+    line-height: $lh
+    letter-spacing: -0.01em
+    color: #242424
+
+$sectionWidth: 1440px
+
+
+%FontFormular
+    font-family: 'Formular'
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    color: #242424
+
+@mixin cardsBlock($cardW, $cards, $cardsM)
+    display: flex
+    width: 100%
+    max-width: calc($cardW * $cards + $cardsM * ($cards - 1))
+    margin: 0 auto
+
+%mainTitle
+    margin: 0 0 0 360px
+    @include fontsNeueMachina(40px, 40px)
+    max-width: 350px
+
+%section
+    width: 100%
+    max-width: $sectionWidth
+    margin: 0 auto
+
+.plays
+    @extend %section
+    margin-bottom: 123px
+
+.persons 
+    @extend %section
+
+.plays__title 
+    @extend %mainTitle
+    margin-bottom: 48px
+
+.persons__title
+    @extend %mainTitle
+    margin-bottom: 58px
+
+.plays__card-title
+    @include fontsNeueMachina(20px, 24px)
+    margin: 0
+
+.plays__card-image 
+    background: #B7C09D
+    width: 216px
+    height: 276px
+    padding: 24px 0 0 24px
+
+.plays__cards-block 
+    @include cardsBlock(240px, 5, 30px)
+
+.persons__cards-block 
+    @include cardsBlock(210px, 4, 30px)
+
+.plays__author 
+    @include fontsNeueMachina(20px, 24px)
+    margin: 16px 0 4px 0
+
+.person__name
+    @include fontsNeueMachina(28px, 32px)
+    max-width: 190px
+    margin: 16px 0 8px 0
+
+.person__description 
+    @extend %FontFormular
+    max-width: 190px
+    margin: 0 0 0 33px
+
+.plays__info 
+    @extend %FontFormular
+    margin: 0 
+
+.persons__card-img
+    width: 210px
+
+.persons__card, .plays__card
+    margin-right: 30px
+    &:nth-last-child(1)
+        margin-right: 0
+
+@media screen and (max-width: 1439px)
+
+    $sectionWidth: 1200px
+
+    %mainTitle
+        margin: 0 0 30px 360px
+
+    %section
+        width: 100%
+        max-width: $sectionWidth
+        margin: 0 auto
+
+    .plays
+        margin-bottom: 100px
+
+    .plays__card-image 
+        width: 190px
+        height: 250px
+
+    .plays__cards-block 
+        @include cardsBlock(214px, 5, 30px)
+
+@media screen and (max-width: 1244px)
+
+    $sectionWidth: 1044px
+
+    %mainTitle
+        margin: 0 0 30px 240px
+
+    %section
+        width: 100%
+        max-width: $sectionWidth
+        margin: 0 auto
+
+    .plays
+        margin-bottom: 80px
+
+    .plays__card-image 
+        width: 160px
+        height: 210px
+
+    .persons__card-img
+        width: 210px
+
+    .plays__cards-block 
+        @include cardsBlock(184px, 5, 30px)
+
+    .persons__cards-block 
+        @include cardsBlock(210px, 4, 30px)
+
+@media screen and (max-width: 1076px)
+
+    $sectionWidth: 900px
+
+    %section
+        width: 100%
+        max-width: $sectionWidth
+        margin: 60px auto
+
+    .plays__card-image 
+        width: 140px
+        height: 190px
+
+    .plays__card 
+        width: 170px
+
+    .persons__card-img
+        width: 210px
+
+    .plays__cards-block 
+        @include cardsBlock(170px, 5, 10px)
+
+    .persons__cards-block 
+        @include cardsBlock(210px, 4, 30px)
+
+    .persons__card, .plays__card
+        margin-right: 10px
+        &:nth-last-child(1)
+            margin-right: 0
+
+@media screen and (max-width: 960px)
+
+    $sectionWidth: 810px
+    
+    %section
+        width: 100%
+        max-width: $sectionWidth
+        margin: 40px auto
+
+    .plays__card-image 
+        width: 130px
+        height: 150px
+    
+    .persons__card, .plays__card
+        margin-right: 10px
+        &:nth-last-child(1)
+            margin-right: 0
+    
+    .persons__card-img
+        width: 150px
+        height: 200px
+    
+    .persons__card
+        width: 150px
+    
+    .persons__cards-block 
+        @include cardsBlock(150px, 4, 10px)
+
+    .plays__info
+        max-width: 140px
+
+    .plays__author
+        max-width: 140px
+
+    .plays__card 
+        width: 154px
+    
+    .plays__cards-block 
+        @include cardsBlock(154px, 5, 10px)
