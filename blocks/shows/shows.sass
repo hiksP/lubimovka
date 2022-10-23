@@ -1,0 +1,47 @@
+@import "../../SASS/main.sass"
+
+.shows 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding: 0
+  background-color: $whiteBg
+
+  &__name 
+    +h4
+    padding-left: 360px
+    margin-bottom: 45px
+    width: 450px
+    @media (max-width: $mobile)
+      padding-left: 24px
+      width: 369px
+      font-size: 28px
+      padding-top: 100px
+      margin-bottom: 34px
+
+  &_one-show 
+    padding: 0
+    margin: 0
+    display: flex
+  
+
+  &__list 
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    margin-bottom: 129px
+    @media (max-width: $mobile)
+      flex-wrap: wrap
+      justify-content: center
+
+  &__list_two-shows 
+    justify-content: center
+  
+  &_one-show 
+    display: flex
+    flex-direction: row
+  
+  &_desktop 
+    @media (max-width: $mobile) 
+      display: none

@@ -1,5 +1,7 @@
-/* identical to box height, or 138% */
-/* black */
+body {
+  background-color: #ECEBE8;
+}
+
 .ol {
   outline: 1px red solid;
 }
@@ -105,4 +107,4 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.21;
-}
+}/*# sourceMappingURL=header.css.map */
