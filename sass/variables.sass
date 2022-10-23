@@ -3,4 +3,87 @@ $greenBg: #B7C09D
 
 // font-family
 $f_machina: 'Neue Machina Regular'
-$f_formular: 'Formular-light'
+$f_formular: "FormularLight", "Arial", "sans-serif"
+
+//plays/pesron
+
+@mixin fontsNeueMachina($fz, $lh) 
+    font-family: 'Neue Machina Regular'
+    font-style: normal
+    font-weight: 400
+    font-size: $fz
+    line-height: $lh
+    letter-spacing: -0.01em
+    color: #242424
+
+$sectionWidth: 1440px
+
+
+%FontFormular
+    font-family: "FormularLight", "Arial", "sans-serif"
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    color: #242424
+
+@mixin cardsBlock($cardW, $cards, $cardsM)
+    display: flex
+    width: 100%
+    max-width: calc($cardW * $cards + $cardsM * ($cards - 1))
+    margin: 0 auto
+
+%mainTitle
+    margin: 0 0 0 360px
+    @include fontsNeueMachina(40px, 40px)
+    max-width: 350px
+
+%section
+    width: 100%
+    max-width: $sectionWidth
+    margin: 0 auto
+    
+@media screen and (max-width: 1439px)
+    
+    $sectionWidth: 1200px
+
+    %mainTitle
+        margin: 0 0 30px 360px
+
+    %section
+        width: 100%
+        max-width: $sectionWidth
+        margin: 0 auto
+
+@media screen and (max-width: 1244px)
+
+    $sectionWidth: 1044px
+
+    %mainTitle
+        margin: 0 0 30px 240px
+
+    %section
+        width: 100%
+        max-width: $sectionWidth
+        margin: 0 auto
+
+@media screen and (max-width: 1076px)
+
+    $sectionWidth: 900px
+
+    %section
+        width: 100%
+        max-width: $sectionWidth
+        margin: 60px auto
+
+@media screen and (max-width: 960px)
+
+    $sectionWidth: 810px
+    
+    %section
+        width: 100%
+        max-width: $sectionWidth
+        margin: 40px auto
+
+
+//plays/pesron

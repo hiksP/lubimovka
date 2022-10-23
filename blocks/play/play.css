@@ -1,0 +1,194 @@
+.plays__info {
+  font-family: "FormularLight", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242424;
+}
+
+.plays__title {
+  margin: 0 0 0 360px;
+  font-family: "Neue Machina Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  color: #242424;
+  max-width: 350px;
+}
+
+.plays {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1439px) {
+  .plays__title {
+    margin: 0 0 30px 360px;
+  }
+  .plays {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1244px) {
+  .plays__title {
+    margin: 0 0 30px 240px;
+  }
+  .plays {
+    width: 100%;
+    max-width: 1044px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1076px) {
+  .plays {
+    width: 100%;
+    max-width: 900px;
+    margin: 60px auto;
+  }
+}
+@media screen and (max-width: 960px) {
+  .plays {
+    width: 100%;
+    max-width: 810px;
+    margin: 40px auto;
+  }
+}
+.plays {
+  margin-bottom: 123px;
+}
+
+.plays__title {
+  margin-bottom: 48px;
+}
+
+.plays__card-title {
+  font-family: "Neue Machina Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #242424;
+  margin: 0;
+}
+
+.plays__card-image {
+  background: #B7C09D;
+  width: 216px;
+  height: 276px;
+  padding: 24px 0 0 24px;
+}
+
+.plays__cards-block {
+  display: flex;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.plays__author {
+  font-family: "Neue Machina Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #242424;
+  margin: 16px 0 4px 0;
+}
+
+.plays__info {
+  margin: 0;
+}
+
+.plays__card {
+  margin-right: 30px;
+}
+.plays__card:nth-last-child(1) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1439px) {
+  .plays {
+    margin-bottom: 100px;
+  }
+  .plays__card-image {
+    width: 190px;
+    height: 250px;
+  }
+  .plays__cards-block {
+    display: flex;
+    width: 100%;
+    max-width: 1190px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1244px) {
+  .plays {
+    margin-bottom: 80px;
+  }
+  .plays__card-image {
+    width: 160px;
+    height: 210px;
+  }
+  .plays__cards-block {
+    display: flex;
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1076px) {
+  .plays__card-image {
+    width: 140px;
+    height: 190px;
+  }
+  .plays__card {
+    width: 170px;
+  }
+  .plays__cards-block {
+    display: flex;
+    width: 100%;
+    max-width: 890px;
+    margin: 0 auto;
+  }
+  .plays__card {
+    margin-right: 10px;
+  }
+  .plays__card:nth-last-child(1) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .plays__card-image {
+    width: 130px;
+    height: 150px;
+  }
+  .plays__card {
+    margin-right: 10px;
+  }
+  .plays__card:nth-last-child(1) {
+    margin-right: 0;
+  }
+  .plays__info {
+    max-width: 140px;
+  }
+  .plays__author {
+    max-width: 140px;
+  }
+  .plays__card {
+    width: 154px;
+  }
+  .plays__cards-block {
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=play.css.map */

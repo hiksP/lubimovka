@@ -1,0 +1,100 @@
+@import ../../sass/variables
+
+.plays
+    @extend %section
+    margin-bottom: 123px
+
+.plays__title 
+    @extend %mainTitle
+    margin-bottom: 48px
+
+.plays__card-title
+    @include fontsNeueMachina(20px, 24px)
+    margin: 0
+
+.plays__card-image 
+    background: #B7C09D
+    width: 216px
+    height: 276px
+    padding: 24px 0 0 24px
+
+.plays__cards-block 
+    @include cardsBlock(240px, 5, 30px)
+
+.plays__author 
+    @include fontsNeueMachina(20px, 24px)
+    margin: 16px 0 4px 0
+
+.plays__info 
+    @extend %FontFormular
+    margin: 0
+
+.plays__card
+    margin-right: 30px
+    &:nth-last-child(1)
+        margin-right: 0
+
+
+@media screen and (max-width: 1439px)
+
+    .plays
+        margin-bottom: 100px
+
+    .plays__card-image 
+        width: 190px
+        height: 250px
+
+    .plays__cards-block 
+        @include cardsBlock(214px, 5, 30px)
+
+
+@media screen and (max-width: 1244px)
+    .plays
+        margin-bottom: 80px
+
+    .plays__card-image 
+        width: 160px
+        height: 210px
+
+    .plays__cards-block 
+        @include cardsBlock(184px, 5, 30px)
+
+@media screen and (max-width: 1076px)
+
+    .plays__card-image 
+        width: 140px
+        height: 190px
+
+    .plays__card 
+        width: 170px
+
+    .plays__cards-block 
+        @include cardsBlock(170px, 5, 10px)
+
+    .plays__card
+        margin-right: 10px
+        &:nth-last-child(1)
+            margin-right: 0
+
+@media screen and (max-width: 960px)
+
+    .plays__card-image 
+        width: 130px
+        height: 150px
+
+    .plays__card
+        margin-right: 10px
+        &:nth-last-child(1)
+            margin-right: 0
+    
+    .plays__info
+        max-width: 140px
+
+    .plays__author
+        max-width: 140px
+
+    .plays__card 
+        width: 154px
+    
+    .plays__cards-block 
+        @include cardsBlock(184px, 5, 10px)
