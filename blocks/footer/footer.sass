@@ -23,13 +23,21 @@
     width: 145px
     +rest
 
+  &__link
+    +rest
+    font-family: $f_formular
+    font-size: 14px
+    font-weight: 300
+    line-height: 17px
+    &_partner
+      margin-right: 35px
+
   &__partner
     +rest
     background-color: $wheat-bg
     background-blend-mode: multiply
     background-repeat: no-repeat
     background-position: center
-    margin-right: 35px
     &:last-of-type
       margin-right: 0
     &_one
@@ -55,8 +63,7 @@
     align-items: flex-start
     justify-content: space-between
     width: calc( 100% - 22.56% )
-    padding: 0 8% 0 15%
-    margin: 25px 0 0 0
+    margin: 25px 8% 0 15%
 
   &__adress
     width: 231px
@@ -89,21 +96,13 @@
     &:last-of-type
       margin: 0
 
-  &__link
-    +rest
-    font-family: $f_formular
-    font-size: 14px
-    font-weight: 300
-    line-height: 17px
-
   &__bottom-container
     display: flex
     flex-direction: row
     align-items: flex-start
     justify-content: space-between
     width: calc( 100% - 22.56% )
-    padding: 0 8% 0 15%
-    margin: 49px 0 0 0
+    margin: 49px 8% 0 15%
 
   &__left-container
     width: 383px
