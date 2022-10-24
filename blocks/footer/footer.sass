@@ -1,0 +1,134 @@
+@import '../../SASS/_colours'
+@import '../../SASS/_mixins'
+@import '../../SASS/variables';
+
+.footer
+  padding: 46px 0 55px 0
+  +flex-column-center
+  background-color: $wheat-bg
+
+  &__partners-list
+    +reset-list
+    display: flex
+    justify-content: space-between
+    align-self: flex-start
+
+  &__logo
+    height: 80px
+    width: 93px
+    margin: 0 83px 0 5%
+
+  &__partners-title
+    +small_text
+    width: 145px
+    +rest
+
+  &__partner
+    +rest
+    background-color: $wheat-bg
+    background-blend-mode: multiply
+    background-repeat: no-repeat
+    background-position: center
+    margin-right: 35px
+    &:last-of-type
+      margin-right: 0
+    &_one
+      width: 91px
+      height: 34px
+      background-image: url('../../images/footer/partner1.png')
+    &_two
+      width: 88px
+      height: 31px
+      background-image: url('../../images/footer/partner2.png')
+    &_three
+      width: 68px
+      height: 37px
+      background-image: url('../../images/footer/partner3.png')
+    &_four
+      width: 97px
+      height: 36px
+      background-image: url('../../images/footer/partner4.png')
+
+  &__mid-container
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: space-between
+    width: calc( 100% - 22.56% )
+    padding: 0 8% 0 15%
+    margin: 25px 0 0 0
+
+  &__adress
+    width: 231px
+
+  &__adress-title
+    font-family: $f_machina
+    font-size: 20px
+    font-weight: 400
+    line-height: 24px
+
+  &__adress-text
+    font-family: $f_formular
+    font-size: 14px
+    line-height: 17px
+
+  &__links-container
+    display: flex
+
+  &__links
+    +reset-list
+    margin-right: 100px
+    &:nth-last-of-type(2)
+      margin-right: 77px
+    &:nth-of-type(3)
+      margin-right: 0
+
+  &__link-item
+    +rest
+    margin-bottom: 15px
+    &:last-of-type
+      margin: 0
+
+  &__link
+    +rest
+    font-family: $f_formular
+    font-size: 14px
+    font-weight: 300
+    line-height: 17px
+
+  &__bottom-container
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: space-between
+    width: calc( 100% - 22.56% )
+    padding: 0 8% 0 15%
+    margin: 49px 0 0 0
+
+  &__left-container
+    width: 383px
+    display: flex
+    flex-direction: row
+
+  &__text
+    +small_text
+    +rest
+    margin-right: 32px
+    &:last-of-type
+      margin: 0
+
+  &__right-container
+    width: 389px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+  &__design-logo
+    width: 27px
+    height: 25px
+    margin-right: 5px
+
+
+
+
